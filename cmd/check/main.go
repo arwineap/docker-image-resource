@@ -27,7 +27,6 @@ func main() {
 	fatalIf("failed to read request", err)
 
 	registryHost, repo := parseRepository(request.Source.Repository)
-    fmt.Println(registryHost, repo)
 
 	tag := request.Source.Tag
 	if tag == "" {
